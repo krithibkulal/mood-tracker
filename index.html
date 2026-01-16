@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mood Tracker</title>
+</head>
+<body>
+  <h2>How do you feel today?</h2>
+
+  <select id="mood">
+    <option>Happy</option>
+    <option>Sad</option>
+    <option>Tired</option>
+    <option>Excited</option>
+  </select>
+
+  <button onclick="saveMood()">Save</button>
+
+  <p id="result"></p>
+
+  <script>
+    function saveMood() {
+      let mood = document.getElementById("mood").value;
+      document.getElementById("result").innerText =
+        "Today I feel: " + mood;
+    }
+  </script>
+</body>
+</html>
